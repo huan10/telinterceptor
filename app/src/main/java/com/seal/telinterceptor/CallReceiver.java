@@ -85,6 +85,8 @@ public class CallReceiver extends BroadcastReceiver {
         layoutParams.x = 0;
         layoutParams.y = 600;
 
+        hideFloatWindow(context);
+
         windowManager.addView(mPhoneInfoLayout, layoutParams);
         mPhoneInfoLayout.setTag("1");
         mPhoneInfoLayout.setData(phoneInfo);
